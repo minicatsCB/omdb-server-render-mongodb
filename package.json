@@ -1,0 +1,30 @@
+{
+  "name": "omdb-server-render-mongodb",
+  "version": "1.0.0",
+  "description": "omdb-server-render-mongodb",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minicatsCB/omdb-server-render-mongodb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minicatsCB/omdb-server-render-mongodb/issues"
+  },
+  "homepage": "https://github.com/minicatsCB/omdb-server-render-mongodb#readme",
+  "dependencies": {
+    "ejs": "2.6.2",
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "1.19.1"
+  }
+}
