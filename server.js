@@ -19,7 +19,17 @@ app.get("/", (req, res) => {
     });
 });
 
-app.get("/create", (req, res) => {});
+app.get("/create", (req, res) => {
+    controller.saveMovie(req.query.title).then(movie => {
+        if (movie) {
+            res.render("index", {
+                movies: [movie]
+            });
+        } else {
+            res.redirect("/");
+        }
+    });
+});
 
 app.get("/movie/:id", (req, res) => {});
 
