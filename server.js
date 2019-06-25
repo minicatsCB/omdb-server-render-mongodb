@@ -31,7 +31,14 @@ app.get("/create", (req, res) => {
     });
 });
 
-app.get("/movie/:id", (req, res) => {});
+app.get("/movie/:id", (req, res) => {
+    let movie = controller.getMovieById(req.params.id).then(movie => {
+        res.render("movie", {
+            movie: movie,
+            isEditOn: false
+        });
+    });
+});
 
 app.post("/movie/:id/delete", (req, res) => {});
 
